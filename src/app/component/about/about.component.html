@@ -3,18 +3,86 @@
 <mat-vertical-stepper [linear]="false" #stepper>
   <!-- first -->
   <mat-step [stepControl]="firstFormGroup">
-    <form [formGroup]="firstFormGroup">
       <ng-template matStepLabel>
         About Me
       </ng-template>
-      <ul style="list-style-type:circle;">
-      <li>I am <b>Angular Developer</b> with 2+ Year Of Experincee In Tata Consultancy Services</li>
-      <li>I have Also Work On Android</li>
-      <li>I am Very Passionate About Learning new Things keep me Update  with Latest Trends</li>
-      <!-- <P>This topic can help you understand Angular: what Angular is, what advantages it provides, and what you</P>
-      <p>Integrate ELk With Angular send Logs</p> -->
-    </ul>
-    </form>
+  
+        <!-- <tr>
+          
+          <ul style="list-style-type:circle;">
+           <li>I am <b>Angular Developer</b> with 2+ Year Of Experincee In Tata Consultancy Services</li>      
+            <li>Worked with Software Development Life Cycle(SDLC) and agile methodologies</li>
+            <li>Have a  good understanding about Android, Azure also basic knowledge about Nodejs</li>
+            <li>I am Very Passionate About Learning new Things keep me Update  with Latest Trends</li>
+          </ul>
+        </tr> -->
+        
+     
+        <mat-grid-list cols="2" rowHeight="160px" 
+    [gutterSize]="'20px'">
+          <mat-grid-tile>
+            <ul style="list-style-type:circle;">
+              <li>I am <b>Angular Developer</b> with 2+ Year Of Experincee In Tata Consultancy Services</li>  &nbsp;      
+               <li>Worked with Software Development Life Cycle(SDLC) and agile methodologies</li>  &nbsp;
+               <li>Have a  good understanding about Android, Azure also basic knowledge about Nodejs</li>  &nbsp;
+               <li>I am Very Passionate About Learning new Things keep me Update  with Latest Trends</li>
+             </ul>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <table style="height:100px;width:200px">
+
+              <tr class="table-hight">
+                  <th>
+                      <mat-label> Email</mat-label>
+                  </th>
+                  <td style="margin-left: 20px;">
+                      <mat-label>
+                          {{"adarsh.alld100@gmail.com"}}
+                      </mat-label>
+                  </td>
+              </tr>
+          
+                  &nbsp;
+              <tr class="table-hight">
+                <th class="th-left">
+                    <mat-label> Phone</mat-label>
+                </th>
+                <td class="td-center">
+                    <mat-label>
+                        {{"7665282012"}}
+                    </mat-label>
+                </td>
+            </tr>
+            &nbsp;
+            
+            <tr class="table-hight">
+              
+              <th style="margin-left: 10px;">
+                  <mat-label> Lang</mat-label>
+              </th>
+              <td >
+                  <mat-label>
+                      {{"Hindi ,English"}}
+                  </mat-label>
+              </td>
+          </tr>
+          &nbsp;
+          <tr class="table-hight">
+            <th>
+                <mat-label> DOB</mat-label>
+            </th>
+            <td >
+                <mat-label>
+                    {{"06/05/1999"}}
+                </mat-label>
+            </td>
+        </tr>
+              </table>
+          </mat-grid-tile>
+  
+        </mat-grid-list>
+      
+     
   </mat-step>
   <!-- second -->
   <mat-step [stepControl]="secondFormGroup">
