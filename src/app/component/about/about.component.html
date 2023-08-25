@@ -1,0 +1,44 @@
+<mat-card style="width: 98.5%;">
+  <h1 style="text-align: center;">About & Experience</h1>
+<mat-vertical-stepper [linear]="false" #stepper>
+  <!-- first -->
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>
+        About Me
+      </ng-template>
+      <ul style="list-style-type:circle;">
+      <li>I am <b>Angular Developer</b> with 2+ Year Of Experincee In Tata Consultancy Services</li>
+      <li>I have Also Work On Android</li>
+      <li>I am Very Passionate About Learning new Things keep me Update  with Latest Trends</li>
+      <!-- <P>This topic can help you understand Angular: what Angular is, what advantages it provides, and what you</P>
+      <p>Integrate ELk With Angular send Logs</p> -->
+    </ul>
+    </form>
+  </mat-step>
+  <!-- second -->
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Angular</ng-template>
+
+      <ul style="list-style-type:circle;">
+        <li>Implemnt the Reusable Table In Angular so that No Need Write Code Again and Again</li>
+        <li>Implment Infinte Scroll In Angular</li>
+    </ul>
+   
+    </form>
+  </mat-step>
+  <!-- third -->
+  <mat-step>
+    <ng-template matStepLabel>Android and Other Technology</ng-template>
+    <ul style="list-style-type:circle;">
+    <li>In Android working on Ui part of the app design the screen Using Contraint Layout</li>
+    <li>Implment The splunk in Android to Capture the Logs of Android see in Splunk</li>
+    </ul>
+    
+  </mat-step>
+</mat-vertical-stepper>
+
+
+</mat-card>
+
